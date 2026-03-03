@@ -33,7 +33,7 @@ setEmployee(prev=>({
 const loadCompanies = async()=>{
 
 const res = await axios.get(
-"http://localhost:5000/api/company"
+"https://hr-backend-hlxf.onrender.com/api/company"
 )
 
 setCompanies(res.data.data)
@@ -45,7 +45,7 @@ setCompanies(res.data.data)
 const loadDesignations = async(companyId)=>{
 
 const res = await axios.get(
-`http://localhost:5000/api/designation/company/${companyId}`
+`https://hr-backend-hlxf.onrender.com/api/designation/company/${companyId}`
 )
 
 setDesignations(res.data.data)
@@ -75,7 +75,7 @@ const handelSubmit = async(e)=>{
 e.preventDefault()
 
 await axios.post(
-"http://localhost:5000/api/employee",
+"https://hr-backend-hlxf.onrender.com/api/employee",
 employee
 )
 

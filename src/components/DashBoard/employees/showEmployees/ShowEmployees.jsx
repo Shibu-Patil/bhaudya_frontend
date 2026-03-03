@@ -9,7 +9,7 @@ const [employees,setEmployees] = useState([])
 const loadEmployees = async ()=>{
 
  const res = await axios.get(
- "http://localhost:5000/api/employee"
+ "https://hr-backend-hlxf.onrender.com/api/employee"
  )
 
  setEmployees(res.data.data)
@@ -26,7 +26,7 @@ useEffect(()=>{
 const deleteEmployee = async(id)=>{
 
  await axios.delete(
- `http://localhost:5000/api/employee/${id}`
+ `https://hr-backend-hlxf.onrender.com/api/employee/${id}`
  )
 
  loadEmployees()

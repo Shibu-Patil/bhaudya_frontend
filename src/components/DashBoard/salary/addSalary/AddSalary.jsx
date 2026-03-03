@@ -19,7 +19,7 @@ const [companies,setCompanies] = useState([])
 const loadEmployees = async()=>{
 
 const res = await axios.get(
-"http://localhost:5000/api/employee"
+"https://hr-backend-hlxf.onrender.com/api/employee"
 )
 
 setEmployees(res.data.data)
@@ -30,7 +30,7 @@ setEmployees(res.data.data)
 const loadCompanies = async()=>{
 
 const res = await axios.get(
-"http://localhost:5000/api/company"
+"https://hr-backend-hlxf.onrender.com/api/company"
 )
 
 setCompanies(res.data.data)
@@ -97,7 +97,7 @@ const handelSubmit=async(e)=>{
 e.preventDefault()
 
 await axios.post(
-"http://localhost:5000/api/salary",
+"https://hr-backend-hlxf.onrender.com/api/salary",
 salary
 )
 

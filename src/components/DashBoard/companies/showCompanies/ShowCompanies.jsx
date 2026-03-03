@@ -11,7 +11,7 @@ const loadCompanies = async ()=>{
  try{
 
  const res = await axios.get(
-   "http://localhost:5000/api/company"
+   "https://hr-backend-hlxf.onrender.com/api/company"
  )
 
  setCompanies(res.data.data)
@@ -30,7 +30,7 @@ const deleteCompany = async(id)=>{
  try{
 
  await axios.delete(
-   `http://localhost:5000/api/company/${id}`
+   `https://hr-backend-hlxf.onrender.com/api/company/${id}`
  )
 
  loadCompanies()

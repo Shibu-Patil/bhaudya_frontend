@@ -19,7 +19,7 @@ const loadEmployees=async()=>{
 try{
 
 const res=await axios.get(
-"http://localhost:5000/api/employee"
+"https://hr-backend-hlxf.onrender.com/api/employee"
 )
 
 setEmployees(res.data.data || [])
@@ -75,7 +75,7 @@ return
 try{
 
 const res=await axios.post(
-"http://localhost:5000/api/salary/calculate",
+"https://hr-backend-hlxf.onrender.com/api/salary/calculate",
 {
 employeeId:data.employeeId,
 month:Number(data.month),

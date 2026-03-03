@@ -30,7 +30,7 @@ const handelChange=(e)=>{
 const loadCompanies = async()=>{
 
  const res = await axios.get(
- "http://localhost:5000/api/company"
+ "https://hr-backend-hlxf.onrender.com/api/company"
  )
 
  setCompanies(res.data.data)
@@ -54,7 +54,7 @@ e.preventDefault()
 try{
 
 await axios.post(
-"http://localhost:5000/api/designation",
+"https://hr-backend-hlxf.onrender.com/api/designation",
 designation
 )
 

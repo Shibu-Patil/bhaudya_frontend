@@ -9,7 +9,7 @@ const [salary,setSalary]=useState([])
 const loadSalary=async()=>{
 
 const res=await axios.get(
-"http://localhost:5000/api/salary"
+"https://hr-backend-hlxf.onrender.com/api/salary"
 )
 
 setSalary(res.data.data)
@@ -26,7 +26,7 @@ loadSalary()
 const deleteSalary=async(id)=>{
 
 await axios.delete(
-`http://localhost:5000/api/salary/${id}`
+`https://hr-backend-hlxf.onrender.com/api/salary/${id}`
 )
 
 loadSalary()

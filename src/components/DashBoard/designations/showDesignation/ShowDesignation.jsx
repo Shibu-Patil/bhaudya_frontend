@@ -10,7 +10,7 @@ const [designations,setDesignations] = useState([])
 const loadDesignations = async()=>{
 
  const res = await axios.get(
- "http://localhost:5000/api/designation"
+ "https://hr-backend-hlxf.onrender.com/api/designation"
  )
 
  setDesignations(res.data.data)
@@ -22,7 +22,7 @@ const loadDesignations = async()=>{
 const deleteDesignation = async(id)=>{
 
 await axios.delete(
-`http://localhost:5000/api/designation/${id}`
+`https://hr-backend-hlxf.onrender.com/api/designation/${id}`
 )
 
 loadDesignations()

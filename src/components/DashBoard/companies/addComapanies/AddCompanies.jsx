@@ -27,7 +27,7 @@ const AddCompanies = () => {
     try{
 
       await axios.post(
-        "http://localhost:5000/api/company",
+        "https://hr-backend-hlxf.onrender.com/api/company",
         {
               name:company.name,
               gst:company.gst,

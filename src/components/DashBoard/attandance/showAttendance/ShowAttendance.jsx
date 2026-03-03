@@ -10,7 +10,7 @@ const [attendance,setAttendance] = useState([])
 const loadAttendance = async()=>{
 
  const res = await axios.get(
- "http://localhost:5000/api/attendance"
+ "https://hr-backend-hlxf.onrender.com/api/attendance"
  )
 
  setAttendance(res.data.data)
@@ -27,7 +27,7 @@ useEffect(()=>{
 const deleteAttendance = async(id)=>{
 
  await axios.delete(
- `http://localhost:5000/api/attendance/${id}`
+ `https://hr-backend-hlxf.onrender.com/api/attendance/${id}`
  )
 
  loadAttendance()
