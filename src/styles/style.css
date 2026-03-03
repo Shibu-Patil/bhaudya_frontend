@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* track (background) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* draggable part */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+@theme {
+  --animate-moveSide: moveSide 1s ease-in-out infinite;
+@keyframes moveSide {
+  0%, 100% {
+    transform: translateX(25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+}
+
+
+ @font-face {
+        font-family: "shubham";
+        src: url("/font/Inter/Inter-VariableFont_opsz\,wght.ttf");
+    }
+@theme {
+  --font-shubham: "shubham"; 
+}
+
+ 
+
